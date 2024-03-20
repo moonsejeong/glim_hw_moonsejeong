@@ -1,0 +1,9 @@
+﻿  stdafx.cpp
+  iglimDlg.cpp
+  iglim.cpp
+  DlgImg.cpp
+  Generating Code...
+DlgImg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+iglimDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+  iglim.vcxproj -> C:\Users\admin\Desktop\iglim\Debug\iglim.exe
+  iglim.vcxproj -> C:\Users\admin\Desktop\iglim\Debug\iglim.pdb (Partial PDB)
