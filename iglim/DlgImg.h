@@ -26,4 +26,5 @@ protected:
 public:
 	virtual BOOL OnInitDialog();
 	afx_msg void OnPaint();
+	void DrawXmark(unsigned char* fm, int nPitch, int nCenterX, int nCenterY);
 };

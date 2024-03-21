@@ -343,7 +343,7 @@ void CiglimDlg::SaveImg()
 	strFileName.Format(_T("%02d.bmp"), m_nNum);
 
 	CString strFilePath;
-	strFilePath.Format(_T("C:\\image\\%s"), strFileName);
+	strFilePath.Format(_T(".\\image\\%s"), strFileName);
 
 	m_pImg.Save(strFilePath);
 	m_List.InsertItem(0, strFileName, 0);
@@ -497,7 +497,7 @@ void CiglimDlg::OnNMDblclkList(NMHDR *pNMHDR, LRESULT *pResult)
 	if (pNMItemActivate->iItem != -1) {
 		CString strFileName = m_List.GetItemText(pNMItemActivate->iItem, 0);
 		CString strFilePath;
-		strFilePath.Format(_T("C:\\image\\%s"), strFileName);
+		strFilePath.Format(_T(".\\image\\%s"), strFileName);
 
 		CDlgImg dig;
 		dig.m_strFilePath = strFilePath;
@@ -511,6 +511,8 @@ void CiglimDlg::OnNMDblclkList(NMHDR *pNMHDR, LRESULT *pResult)
 void CiglimDlg::OnBnClickedBtnQuit()
 {
 	// TODO: Add your control notification handler code here
-	if (AfxMessageBox(_T("Are you sure to quit?"), MB_OKCANCEL) == IDOK)
+	if (AfxMessageBox(_T("Are you sure to quit?"), MB_YESNO) == IDYES)
+	{
 		EndDialog(IDOK);
+	}
 }

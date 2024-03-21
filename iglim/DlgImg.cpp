@@ -74,5 +74,19 @@ void CDlgImg::OnPaint()
 	int nCenterX = nSumX / nCount;
 	int nCenterY = nSumY / nCount;
 
+	DrawXmark(fm, nPitch, nCenterX, nCenterY);
+
 	std::cout << "Center of Circle (" << nCenterX << "," << nCenterY << ")" << std::endl;
+}
+
+void CDlgImg::DrawXmark(unsigned char* fm, int nPitch, int nCenterX, int nCenterY)
+{
+	for (int i = -5; i < 6; i++)
+		fm[(nCenterY - i) * nPitch + (nCenterX - i)] = 0xff;
+
+	for (int i = -5; i < 6; i++)
+		fm[(nCenterY + i) * nPitch + (nCenterX - i)] = 0xff;
+
+	CClientDC dc(this);
+	m_pImg.Draw(dc, 0, 0);
 }

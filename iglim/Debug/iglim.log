@@ -1,9 +1,5 @@
-﻿  stdafx.cpp
-  iglimDlg.cpp
-  iglim.cpp
-  DlgImg.cpp
-  Generating Code...
-DlgImg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
-iglimDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
-  iglim.vcxproj -> C:\Users\admin\Desktop\iglim\Debug\iglim.exe
-  iglim.vcxproj -> C:\Users\admin\Desktop\iglim\Debug\iglim.pdb (Partial PDB)
+﻿  DlgImg.cpp
+DlgImg.obj : warning LNK4258: '/entry:WinMainCRTStartup' 지시문은 '/ENTRY:wWinMainCRTStartup' 스위치와 호환되지 않습니다. 무시됩니다.
+iglimDlg.obj : warning LNK4258: '/entry:WinMainCRTStartup' 지시문은 '/ENTRY:wWinMainCRTStartup' 스위치와 호환되지 않습니다. 무시됩니다.
+  iglim.vcxproj -> C:\Users\문세정\Documents\GitHub\glim_hw_moonsejeong\Debug\iglim.exe
+  iglim.vcxproj -> C:\Users\문세정\Documents\GitHub\glim_hw_moonsejeong\Debug\iglim.pdb (Partial PDB)
